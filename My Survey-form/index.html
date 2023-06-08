@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">CodeWave Solutions Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <main>
+    <form id="survey-form" action="#">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age(Optional):</label>
+        <input type="number" id="number" placeholder="Enter a number" min="1" max="100" >
+      </div>
+      <div class="form-group">
+        <label for="dropdown">What best describes your current role?:</label>
+        <select id="dropdown">
+          <option value="option1">Software Engineer</option>
+          <option value="option2">IoT Enthusiast</option>
+          <option value="option3">Problem Solver</option>
+          <option value="option4">Product Buyer</option>
+          <option value="option5">Knowledge Seeker</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Would you recommend CodeWave to a friend ?:</label>
+        <input type="radio" id="radio1" name="options" value="option1">
+        <label for="radio1">Definately</label>
+        <input type="radio" id="radio2" name="options" value="option2">
+        <label for="radio2">Maybe</label>
+        <input type="radio" id="radio2" name="options" value="option3">
+        <label for="radio2">Not sure</label>
+      </div>
+      <div class="form-group custom-group">
+        <label>What feature of CodeWave Solutions do you love the most?</label>
+        <label for="checkbox1"><input type="checkbox" id="checkbox1" value="option1">Software Development Services</label>
+        <label for="checkbox2"><input type="checkbox" id="checkbox2" value="option2"> IoT Products</label>
+        <label for="checkbox3"><input type="checkbox" id="checkbox3" value="option3">Consultancy and Solution Architecture</label>
+        <label for="checkbox4"><input type="checkbox" id="checkbox4" value="option4">Problem Solving and Troubleshooting</label>
+        <label for="checkbox5"><input type="checkbox" id="checkbox5" value="option5">Customization and Integration</label>
+        <label for="checkbox6"><input type="checkbox" id="checkbox6" value="option6">Support and Maintenance</label>
+        <label for="checkbox7"><input type="checkbox" id="checkbox7" value="option7">Innovation and Research</label>
+      </div>      
+      <div class="form-group comments-group">
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+      </div>      
+      <div class="button-wrapper">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
