@@ -1,0 +1,243 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+.navigation {
+    position:sticky;
+    top:10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 20px 0;
+    color: white;
+    z-index: 1000;
+    width: 90%; /* Adjust the width of the navigation bar */
+    margin: 0 auto; /* Center the navigation bar */    
+}
+
+.search-bar {
+    flex: 0;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    border: 2px solid #65A0D1; /* Bluish border color */
+    border-radius: 10px;
+    padding:5px 0px;
+}
+
+.search-bar i {
+    margin-left: 7px;
+    font-size: 24px; /* Increase the icon size */
+    color: black;   /* Change the icon color to black */
+    cursor: pointer;
+    flex: 0;
+    padding:1px;
+}
+.search-bar input {
+    flex: 0;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-right: 2px; /* Adjust the margin as needed */
+}
+/* Cart Icons */
+.cart-icons i {
+    font-size: 24px; /* Increase the icon size */
+    color: black;   /* Change the icon color to black */
+    margin-right: 10px; /* Increase the space between icons */
+}
+.cart-icons span {
+    display: block; /* Place the text below the icon */
+    text-align: center;
+    font-size: 12px;
+    color: black; /* Set the text color to black */
+    text-decoration: none;
+}
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 0; /* Align to the left */
+}
+
+/* Style the text labels for icons */
+.user-icon span {
+    display: block; /* To place the text below the icon */
+    text-align: center;
+    font-size: 12px; /* Adjust the font size as needed */
+    color: black; /* Adjust the color as needed */
+}
+/* Adjust the size of the logo */
+.logo-image {
+    width: 100%; /* Maintain the same logo size */
+    height: 100%;
+    margin-right: 10px; /* Add a margin to separate logo from search bar */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-right: auto;
+}
+
+/* Top Searches */
+.top-searches {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Product Listings */
+.product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.product-block {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    flex: 0 0 calc(33.33% - 20px); /* To make three items per row */
+    max-width: calc(33.33% - 20px); /* Max width for consistent appearance */
+}
+
+.product-block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-block h3 {
+    margin: 10px 0;
+}
+.product-block p {
+    color: #666;
+}
+
+/* Product Details */
+.product-details {
+    /* Styling for product details page */
+}
+
+/* Shopping Cart */
+.shopping-cart {
+    /* Styling for shopping cart section */
+}
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.add-to-cart-btn box-icon,
+.add-to-cart-btn i {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 5px; /* Add space between the icon and text */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.user-dropdown {
+    display: none;
+    position: absolute;
+    left: -10px; /* Align to the left side */
+    top: 100%; /* Position dropdown below the user icon */    
+    background-color: white;
+    border: 1px solid hsl(0, 0%, 88%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    padding-top:0;
+    margin: 0;
+}
+.user-dropdown li {
+    /* ... Your existing styles ... */
+    padding: 8px;
+    text-align: left;
+    border-top: none; /* Add a top border to separate items */
+}
+.user-dropdown li box-icon,
+.user-dropdown li i {
+    font-size: 16px; /* Adjust the size as needed */
+    margin-right: 5px; /* Add space between the icon and text */
+}
+
+/* Remove the border from the first two items */
+
+.user-dropdown li:nth-child(3) {
+    border-top: 1px solid #000000;
+}
+.user-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 7px; /* Increase the space between icons */
+    margin-right: 5px; /* Increase the space between icons */
+
+}
+
+.user-icon i {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: black; /* Change the color to black */
+    margin-right: 5px; /* Increase the space between icon and text */
+}
+
+.user-icon:hover .user-dropdown {
+    display: block;
+}
+
+.user-dropdown li {
+    padding: 8px;
+    text-align: center;
+}
+
+.user-dropdown li a {
+    left: -10px; /* Align to the left side */
+    top: 100%; /* Position dropdown below the user icon */
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.user-dropdown li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+}
